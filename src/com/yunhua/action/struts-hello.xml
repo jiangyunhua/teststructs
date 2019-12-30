@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+	<!-- namespace 命名空间 -->
+	<package name="demo" extends="struts-default" namespace="/h">
+	
+		<action name="hello" class="com.yunhua.action.HelloAction" method="test">
+			<result name="ho">/index.jsp</result><!-- 默认是转发 -->
+		</action>
+		
+		<action name="hello1" class="com.yunhua.action.HelloAction" method="test2">
+			<result name="ho1">/test.jsp</result><!-- 默认是转发 -->
+		</action>
+		
+	</package>
+
+</struts>
